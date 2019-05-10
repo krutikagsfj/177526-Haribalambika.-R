@@ -1,0 +1,30 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "shooting",
+      "amount": "Rs 105"
+    },
+    {
+      "id": 2,
+      "name": "Angry Birds",
+      "amount": "Rs 95"
+    },
+    {
+      "id": 3,
+      "name": "Temple Run",
+      "amount": "Rs.200"
+    },
+    {
+      "id": 4,
+      "name": "Bike Race",
+      "amount": "Rs 90"
+    },
+    {
+      "id": 5,
+      "name": "Air Control",
+      "amount": "Rs 800"
+    }
+    
+  ]
+}

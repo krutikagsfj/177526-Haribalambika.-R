@@ -1,0 +1,33 @@
+<div class="container">
+  <h3>Welcome to Capgemini:177526</h3>
+  <hr>
+  <h3>Welcome To GameCity:Experience the Online Gaming Experience</h3>
+  
+  <form [formGroup]="gameform" novalidate>
+  Name <input formControlName="name" type="text" class="form-control" >
+  <div class="alert alert-info" *ngIf="gameform.get('name').hasError('required')&& gameform.get('name').touched">
+    Please provide a Name
+    </div>
+    <div class="alert alert-info" *ngIf="gameform.get('name').hasError('pattern')"> 
+        name should have only characters
+        </div>
+  <br><br>
+ Address<input formControlName="address" type="text" class="form-control">
+ <div class="alert alert-info" *ngIf="gameform.get('address').hasError('required') && gameform.get('address').touched">
+   Give correct address
+  </div>
+ <br><br>
+  Amount To Pay<input formControlName="amount" type="text"class="form-control">
+  <div class="alert alert-info" *ngIf="gameform.get('amount').hasError('required')&& gameform.get('amount').touched">
+    </div>
+    <div class="alert alert-info" *ngIf="gameform.get('amount').hasError('pattern')"> 
+        smount should have only numbers
+        </div>
+  <br><br>
+ 
+  <button (click)="BuyCard()" class="btn btn-success">Buy Card</button>
+  <br>
+  Note:100 Rs will be deducted for service charge
+</form>
+
+</div>

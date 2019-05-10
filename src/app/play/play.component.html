@@ -1,0 +1,17 @@
+<div class="table-responsive table-container table-striped">
+   
+    <h4>Welcome to Game City! Your Card Balance amount is {{cardBalance}}</h4>
+    
+  
+     
+    <table class="table">
+    <tr *ngFor ="let g of games">
+      <td>{{g.id}}</td>
+      <td>{{g.name}}</td>
+      <td>{{g.amount}}</td>
+      <td>  <a target="_blank"  href="">Play Now</a></td>
+      
+    </tr>
+  </table>
+  </div>
+  
